@@ -1,0 +1,9 @@
+@import "_mixins/font-face";
+
+@include font-face("Gilroy", "../fonts/Gilroy/ExtraBold/Gilroy-ExtraBold", 900);
+
+@include font-face("FuturaPT", "../fonts/FuturaPT/Bold/FuturaPT-Bold", bold);
+@include font-face("FuturaPT", "../fonts/FuturaPT/Demi/FuturaPT-Demi", 600);
+@include font-face("FuturaPT", "../fonts/FuturaPT/Light/FuturaPT-Light", 300);
+@include font-face("FuturaPT", "../fonts/FuturaPT/Medium/FuturaPT-Medium", 500);
+@include font-face("FuturaPT", "../fonts/FuturaPT/Regular/FuturaPT-Regular", normal);

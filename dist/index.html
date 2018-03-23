@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Start Page</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+</head>
+
+<body>
+
+    <div class="page-wrapper">
+
+		<div class="page-top"><i class="fa fa-angle-double-up"></i></div>
+
+		<header class="header">
+			<div class="container">
+			  <div class="header-content">
+				<a href="/" class="logo">
+				  <img src="./img/logo.png" alt="">
+				</a>
+				<div class="slogan visible-lg">
+					Поставщик электротехнической 
+					продукции по всей России
+				</div>
+				<div class="grow"></div>
+				<nav class="main-menu">
+				  <div class="container">
+					<ul>
+						<li><a class="link" href="#main">Главная</a></li>
+						<li><a class="link" href="#certificates">Сертификаты</a></li>
+						<li><a class="link" href="#advantages">Преимущества</a></li>
+						<li><a class="link" href="#reviews">Отзывы</a></li>
+						<li><a class="link" href="#contacts">Контакты</a></li>
+						<li class="visible-xxs"><a href="tel:+78462632323" class="text-phone">+7 (846) 263-23-23</a></li>
+				  </ul>
+				  </div>
+				</nav>
+				
+				<div class="header-phone hidden-xxs">
+				  <a href="tel:+78462632323" class="text-phone">+7 (846) 263-23-23</a>
+				  <a href="#" data-remodal-target="zvonok-modal">Заказать звонок</a>
+				</div>
+				
+				<button class="hamburger hamburger--elastic hamburger--accessible">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+			  </div>
+			</div>
+		</header>      
+
+		<section class="section section-main inverse" id="main">
+			<div class="container">
+				<h1 class="section-main-title">
+					Изготовление мебели по индивидуальным эскизам
+					на заказ за 14 дней
+				</h1>
+				
+				<div class="form">
+					<h5 class="form-title">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время</h5>
+					<form action="">
+					  <input type="hidden" name="info" value="">
+					  <div class="form-content">
+						<div class="input-div">
+						  <input type="text" class="input" placeholder="Введите имя">
+						</div>
+						<div class="input-div">
+						  <input type="tel" class="input" placeholder="Введите телефон*" required>
+						  <span class="error-message">Заполните это поле</span>
+						</div>
+						<div class="input-div">
+						  <input type="email" class="input" placeholder="Введите e-mail">
+						</div>
+						<button class="button ajax-submit" type="submit">Оставить заявку</button>
+					  </div>
+					  <div class="politica">
+						<input type="checkbox" class="checkbox" checked=""> 
+						Нажимая на кнопку, я даю свое согласие на обработку персональных данных и соглашаюсь с условиями 
+						<a href="#" target="_blank">политики конфиденциальности</a>
+					  </div>
+					</form>
+				  </div>
+			</div>
+		</section>
+
+		<section class="section section-certificate" id="certificates">
+			<div class="container">
+				<h2 class="section-title">Cертификаты</h2>
+
+				<div class="owl-carousel carousel-certificate" id="carousel-certificate">
+					<a href="./img/certificate-1.jpg" data-fancybox="certificateGallery" class="carousel-certificate-item">
+						<img src="./img/certificate-1.jpg" alt="">
+					</a>
+					<a href="./img/certificate-1.jpg" data-fancybox="certificateGallery" class="carousel-certificate-item">
+						<img src="./img/certificate-1.jpg" alt="">
+					</a>
+					<a href="./img/certificate-1.jpg" data-fancybox="certificateGallery" class="carousel-certificate-item">
+						<img src="./img/certificate-1.jpg" alt="">
+					</a>
+					<a href="./img/certificate-1.jpg" data-fancybox="certificateGallery" class="carousel-certificate-item">
+						<img src="./img/certificate-1.jpg" alt="">
+					</a>
+					<a href="./img/certificate-1.jpg" data-fancybox="certificateGallery" class="carousel-certificate-item">
+						<img src="./img/certificate-1.jpg" alt="">
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section style="height: 300px;"></section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-content">
+					<a href="/" class="logo">
+						<img src="./img/logo.png" alt="">
+					</a>
+					<div class="slogan hidden-md">Поставщик электротехнической продукции по всей России</div>
+
+					<div class="footer-info">
+						<div class="footer-phone">
+							<a href="tel:+78462632323" class="text-phone">+7 (846) 263-23-23</a>
+							<a href="#" data-remodal-target="zvonok-modal">Заказать звонок</a>
+						</div>
+						<div class="footer-address">г. Самара, ул. Утевская, д. 24<br>
+						</div>
+					</div>
+
+					<div class="grow"></div>
+
+					<div class="footer-company">          
+						Разработано командой<br>
+						<img src="./img/marketing-time.png">         
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		
+	</div>
+	
+	<div class="remodal remodal-small" id="thanks-modal" data-remodal-options="hashTracking: false">
+		<button data-remodal-action="close" class="remodal-close"></button>
+
+		<h4 class="modal-title">Спасибо за заявку. Мы с вами свяжимся.</h4>
+	</div>
+
+	<div class="remodal remodal-small" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: false">
+		<button data-remodal-action="close" class="remodal-close"></button>
+		
+		<div class="form">
+			<h5 class="form-title">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время</h5>
+			<form action="">
+			  <input type="hidden" name="info" value="">
+			  <div class="form-content">
+				<div class="input-div">
+				  <input type="text" class="input" placeholder="Введите имя">
+				</div>
+				<div class="input-div">
+				  <input type="tel" class="input" placeholder="Введите телефон*" required>
+				  <span class="error-message">Заполните это поле</span>
+				</div>
+				<button class="button ajax-submit" type="submit">Оставить заявку</button>
+			  </div>
+			  <div class="politica">
+				<input type="checkbox" class="checkbox" checked=""> 
+				Нажимая на кнопку, я даю свое согласие на обработку персональных данных и соглашаюсь с условиями 
+				<a href="#" target="_blank">политики конфиденциальности</a>
+			  </div>
+			</form>
+		</div>
+
+	  </div>
+										
+	<link rel="stylesheet" href="./css/libs.min.css">
+	<link rel="stylesheet" href="./css/main.min.css">
+	<script src="./js/libs.min.js"></script>
+	<script src="./js/main.min.js"></script>
+    
+</body>
+</html>

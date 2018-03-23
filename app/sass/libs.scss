@@ -1,0 +1,176 @@
+@import '../../node_modules/bootstrap-grid/dist/grid.min';
+@import '../../node_modules/remodal/dist/remodal';
+@import '../../node_modules/remodal/dist/remodal-default-theme';
+@import '../../node_modules/owl.carousel/dist/assets/owl.carousel.min';
+@import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min';
+@import '../../node_modules/slick-carousel/slick/slick.css';
+@import '../../node_modules/hamburgers/dist/hamburgers.min';
+@import '../../node_modules/font-awesome/css/font-awesome.min';
+@import './_vars';
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), 
+         url('../fonts/fontawesome/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), 
+         url('../fonts/fontawesome/fontawesome-webfont.woff?v=4.7.0') format('woff'), 
+         url('../fonts/fontawesome/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), 
+         url('../fonts/fontawesome/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+}
+
+.owl-carousel {
+    padding: 0 50px;
+	.owl {
+		&-prev, &-next {
+			position: absolute;
+			top: 50%;
+			width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid #ccc !important;
+			text-align: center;
+			line-height: 40px;
+			margin-top: -20px;
+			outline: 0;
+
+			&:before {
+				font-family: 'FontAwesome';
+				font-size: 30px;
+				display: block;	
+				color: $accent;
+			}
+		}
+
+		&-prev {
+			left: 0px;
+			&:before{
+				content: "\f104";
+			}
+		}
+
+		&-next {
+			right: 0px;
+			&::before {
+				content: "\f105";
+			}
+		}
+	}
+}
+
+.remodal {
+    text-align: left;
+
+    &-close {
+        left: auto;
+        right: 0;
+    }
+
+    &.remodal-small {
+        max-width: 450px;
+    }
+}
+
+.hamburger {
+    background-color: #fff;
+    padding: 10px;
+	line-height: 0;
+	    
+    &-box {
+        width: 30px;
+    }
+
+    &-inner {
+        &, &:after, &:before {            
+            border-radius: 0;
+            width: 100%;
+            height: 2px;        
+        }
+
+        & {
+            margin-top: -1px;
+        }
+
+        &:before {
+            top: 0;
+        }
+
+        &:after {
+            bottom: -7px;
+        }
+    }
+}
+
+.slick-slider {
+    padding: 0 40px;
+}
+
+.slick-arrow {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    margin-top: -16px;
+    top: 50%;
+    right: 0;
+    outline: 0;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #3a3a3a;
+    cursor: pointer;
+
+    &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 7px;
+        height: 7px;
+        border-top: 1px solid #3a3a3a;
+        border-right: 1px solid #3a3a3a;
+        border-left: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+        transform: translate(-75%,-50%) rotate(45deg);
+    }
+
+    &.slick-prev {
+        right: auto;
+        left: 0;
+        &:after {
+            transform: translate(-25%,-50%) rotate(-135deg);
+        }
+    }
+
+    &:hover {
+        border-color: $accent;
+        &:after {
+            border-top-color: $accent;
+            border-right-color: $accent;
+        }
+    }
+}
+
+.slick-dots {
+    margin: 0px 0 0; 
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    li {
+        display: block;
+        width: 9px;
+        height: 9px;
+        background-color: rgb(127, 126, 126);
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+
+        &.slick-active {
+            background-color: rgb(202, 204, 209);
+            transform: scale(1.3);
+        }
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    .remodal {
+        max-width: 80%;
+    }
+}
