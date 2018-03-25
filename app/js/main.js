@@ -6,14 +6,19 @@ $(document).ready(function() {
     var $header = $(".header");
     var $menu = $(".main-menu");
     var utms = parseGET();
-    var headerHeight = 83;
+    var headerHeight = 112;
     var thanks = $("#thanks-modal").remodal();
+    var $hamburger = $(".hamburger");
 
     if(utms && Object.keys(utms).length > 0) {
         window.sessionStorage.setItem('utms', JSON.stringify(utms));
     } else {
         utms = JSON.parse(window.sessionStorage.getItem('utms') || "[]");
     }
+
+   if($wnd.width() < 992) {
+      headerHeight = 74;
+   }
 
     $wnd.scroll(function() { onscroll(); });
 
@@ -30,7 +35,7 @@ $(document).ready(function() {
             $header.removeClass('scrolled');
       }
 
-        var scrollPos = $wnd.scrollTop() + headerHeight;
+      var scrollPos = $wnd.scrollTop() + headerHeight;
 
         $menu.find(".link").each(function() {
             var link = $(this);
@@ -57,6 +62,9 @@ $(document).ready(function() {
         if($href.length > 0 && $($href).length > 0) {
             var top = $($href).offset().top - headerHeight;
             $html.stop().animate({ scrollTop: top }, "slow", "swing");
+            if($wnd.width() <= 991) {
+               toggleHamburger();
+            }
         }
     });
 
@@ -77,19 +85,21 @@ $(document).ready(function() {
         }
     });
 
-    $(".hamburger").click(function() {
-        $this = $(this);
+    $hamburger.click(function() {
+      toggleHamburger();
+      return false;
+   });  
 
-        if(!$this.hasClass("is-active")) {
-            $this.addClass('is-active');
-            $menu.slideDown('700');
-        } else {
-            $this.removeClass('is-active');
-            $menu.slideUp('700');
-        }
-
-        return false;
-    });
+   function toggleHamburger() {
+      $this = $hamburger;
+      if(!$this.hasClass("is-active")) {
+         $this.addClass('is-active');
+         $menu.slideDown('700');
+      } else {
+         $this.removeClass('is-active');
+         $menu.slideUp('700');
+      }
+   }
 
    $(".carousel-diplom").owlCarousel({
       nav: true,
@@ -162,7 +172,7 @@ $(document).ready(function() {
       navText: ['', '']   
    });
 
-    $(".ajax-submit").click(function(e) {
+   $(".ajax-submit").click(function(e) {
         e.preventDefault();
         
         var $form = $(this).closest('form');
@@ -200,7 +210,7 @@ $(document).ready(function() {
             $form[0].reset();
             thanks.open();
         }
-    });
+   });
 
 
 });
