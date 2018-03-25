@@ -62,7 +62,7 @@
                      <a href="tel:+7727317­54­72" class="text-phone">+7 (727) 317­ 54­ 72</a>
                      <a href="tel:+7707444­74­99" class="text-phone">+7 (707) 444­ 74­ 99</a> 
                   </div>
-                  <a href="tel:+7707444­74­99" class="header-phone">
+                  <a href="#" data-remodal-target="zvonok-modal" class="header-phone">
                     <i class="fa fa-phone"></i>
                   </a>
                </div>
@@ -93,7 +93,7 @@
 								Запишитесь 
 								<span>на пробное занятие</span> 
 						</div>
-						<button class="button ajax-submit" type="submit">записаться</button>
+						<button class="button" data-remodal-target="zvonok-modal" type="submit">записаться</button>
 					</div>
 				</div>				
          </div>
@@ -263,7 +263,7 @@
                      <li><img src="./img/figure-1.png" alt=""> Ведущий преподаватель Академии Парикмахерского Искусства</li>
                      <li><img src="./img/figure-1.png" alt=""> Создатель авторской программы «Коммерческие стрижки»</li>
                   </ul>
-                  <input type="button" class="button" value="подробнее">
+                  <input type="button" class="button" data-remodal-target="zvonok-modal" value="подробнее">
                </div>
             </div>
          </div>
@@ -751,23 +751,12 @@
 		
 		<div class="form">
 			<h5 class="form-title">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время</h5>
-			<form action="">
-			  <input type="hidden" name="info" value="">
-			  <div class="form-content">
-				<div class="input-div">
-				  <input type="text" class="input" placeholder="Введите имя">
-				</div>
-				<div class="input-div">
-				  <input type="tel" class="input" placeholder="Введите телефон*" required>
-				  <span class="error-message">Заполните это поле</span>
-				</div>
+			<form action="Оставить заявку">
+			   <input type="hidden" name="info" value="">
+            <input type="text" class="input" name="Имя" placeholder="Введите имя">
+            <input type="tel" class="input" name="Телефон" placeholder="Введите телефон*" required>
+            <span class="error-message">Заполните это поле</span>
 				<button class="button ajax-submit" type="submit">Оставить заявку</button>
-			  </div>
-			  <div class="politica">
-				<input type="checkbox" class="checkbox" checked=""> 
-				Нажимая на кнопку, я даю свое согласие на обработку персональных данных и соглашаюсь с условиями 
-				<a href="#" target="_blank">политики конфиденциальности</a>
-			  </div>
 			</form>
 		</div>
 

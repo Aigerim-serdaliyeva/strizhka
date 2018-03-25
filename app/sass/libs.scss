@@ -79,6 +79,15 @@
     &.remodal-small {
         max-width: 450px;
     }
+
+    .input {
+       width: 100%;
+       margin-bottom: 20px;
+    }
+
+    .button {
+       margin: 0;
+    }
 }
 
 .hamburger {
