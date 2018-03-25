@@ -127,6 +127,30 @@
             margin: 0 10px 20px;
          }
       }
+
+      &-training {
+         &-text {
+            right: 15px;
+         }
+         &-item {
+            &:nth-child(1) {
+               img {
+                  position: absolute;
+                  bottom: 0;
+                  right: 80px;
+                  margin-right: 0;
+               }
+            }
+            &:nth-child(2) {
+               img {
+                  margin-left: 150px;
+               }
+               .section-training-text {
+                  left: 15px;
+               }
+            }
+         }
+      }
    }
 
 
@@ -342,6 +366,22 @@
             margin: 0 0 20px;
             &:last-child {
                margin-bottom: 0;
+            }
+         }
+      }
+
+      &-training {
+         &-content {
+            flex-direction: column;
+         }
+         &-text {
+            position: static;
+            padding: 20px 15px;
+         }
+         &-item {
+            width: 100%;
+            img {
+               display: none;
             }
          }
       }
