@@ -260,7 +260,18 @@
          }
       }
 
-      
+      &-learn {
+         &-content {
+            flex-wrap: wrap;
+         }
+         &-block {
+            width: 50%;
+            margin-bottom: 30px;
+            img {
+               margin-bottom: 5px;
+            }
+         }
+      }
    }
 
 }
@@ -383,6 +394,13 @@
             img {
                display: none;
             }
+         }
+      }
+
+      &-learn {
+         &-block {
+            width: 100%;
+            // margin-bottom: 15px;
          }
       }
    }
