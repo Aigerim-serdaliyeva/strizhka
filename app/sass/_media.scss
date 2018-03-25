@@ -231,7 +231,6 @@
             margin-bottom: 10px;
             &-photo {
                display: none;
-               // width: 80px;
             }
             &-block {
                &-title {
@@ -256,15 +255,7 @@
             width: 100%;
          }
       }
-
-        &-question {
-            .form {
-                .input-div {
-                    width: 100%;
-                    margin-right: 0 !important;
-                }
-            }
-        }
+      
    }
 
 }
