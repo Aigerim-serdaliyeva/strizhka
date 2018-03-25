@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5 {
+  margin: 0 0 1em;
+}
+
 img {
     max-width: 100%;
 }
@@ -19,6 +23,7 @@ img {
 a {
     color: $text_color;
     outline: none;
+    text-decoration: none;
     .inverse & {
         color: #fff;
     }

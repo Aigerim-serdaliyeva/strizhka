@@ -16,18 +16,20 @@
     }
 
     .header {
-        .grow {
-            display: block;
-        }
+       &-nav {
+          border: 0;
+          padding: 0;
+       }
     }
 
 	.main-menu {
-        display: none;
+      display: none;
 		background-color: #191919;
 		position: fixed;
-		top: 79px;
+		top: 74px;
 		left: 0;
-		right: 0;
+      right: 0;
+      height: auto;
 		text-align: left;
 		margin-left: 0;
 		z-index: 98;
@@ -46,14 +48,17 @@
 			padding: 15px 0;
 
 			li {
-                margin: 0 0 5px;
+            margin: 0 0 5px;
+            padding: 0;
+            
+            &.fon {
+               padding: 0;
+               background-image: none;
+            }
 
-                &:last-child {
-                    margin: 0;
-                    a {
-                        color: #fff;
-                    }
-                }
+            &:last-child {
+               margin: 0;
+            }            
 			}
 		}
     }

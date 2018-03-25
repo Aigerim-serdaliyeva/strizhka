@@ -40,7 +40,7 @@ body {
 }
 
 .page-wrapper {
-    padding-top: 79px;
+    // padding-top: 79px;
     overflow: hidden;
 }
 
@@ -60,12 +60,13 @@ body {
 
 .logo {
     text-decoration: none;
+
     .logo-text {
         color: #cc9999;
         font-size: 37px;
         font-family: Gilroy;
         font-weight: 600;
-        margin-right: 15px;
+        margin: 0;
     }
 }
 
@@ -73,58 +74,69 @@ body {
    color: $accent;
 }
 
-.header, .footer {
-   // display: none; 
-   position: fixed;
+.text-phone {
+   display: block;
+   font-weight: 500;
+   font-size: 18px;
+}
+
+
+.header {
+    position: fixed;
     top: 0;
     width: 100%;
-    // background-color: #191919;
-    color: #1b1b1b;
-    padding: 15px 0;
     z-index: 98;
 
-   a {
-      color: #1b1b1b;
-   }
-   .accent {
-   color: $accent;
-   }
-
-    .grow {
-      //   display: none;
-    }
-
     .slogan {
-        font-weight: normal;
+       color: #6b6b6b;
+        font-weight: 300;
         width: 220px;
         font-size: 14px;
+        margin: 0 0 0 15px;
+    }
+
+    &-nav {
+        padding-bottom: 5px;
+        border-bottom: 1px solid #fff;    
     }
 
     &-content {
         display: flex;
         align-items: center;    
-        // justify-content: space-between;
+        padding: 15px 0;
+    }
+
+   &-phone {
+      display: block;
+      width: 34px;
+      height: 34px;
+      border: 1px solid #9ba3ae;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      .fa {
+         margin-top: 1px;
+        color: $accent;
+        font-size: 16px;
+      }
+
+      &:hover {
+         border-color: $accent;
+      }
     }
 
     &-contact {
-       display: flex;
-      .header-phone {
-         display: inline-block;
-         text-align: right;
-         // background-image: url(../img/phone.png);
-         background-repeat: no-repeat;
-         background-position: top 2px left 0px;
-         // padding-left: 33px;
- 
-         a {
-             display: block;
-             font-weight: 500;
-             font-size: 18px;
-             color: #1b1b1b;
-             margin-right: 22px;
-         }
-     }
+       display: flex;     
+       align-items: center;
    }
+
+   &-phones {
+      text-align: right;
+      margin-right: 22px;
+  }
 }
 
 .footer {
@@ -171,16 +183,22 @@ body {
     ul {
         list-style: none;
         display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
     }
 
     li {
-        margin-right: 30px;
-
-        &:last-child {
-            margin-right: 0;
-            // margin-left: 30px;
+        padding: 8px 0px 5px;
+        &.fon {
+            padding: 8px 15px 5px 10px;
+            background-size: 100% 100%;
+            background-image: url('../img/logo-fon.png');
             a {
-                color: $accent;
+                color: #fff;
+                &:hover {
+                    border-bottom: 1px solid #fff;
+                }
             }
         }
     }
@@ -189,19 +207,14 @@ body {
         display: inline-block;
         color: #788089;
         text-transform: uppercase;
-        line-height: 1.5;
         text-decoration: none;
         font-size: 13px;
         border-bottom: 1px solid transparent;
 
-        &:hover {
+        &.link:hover {
             color: $accent;
             border-bottom: 1px solid $accent;
         }
-    }
-
-    .sub-menu {
-        display: none;
     }
 }
 
