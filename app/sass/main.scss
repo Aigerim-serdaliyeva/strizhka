@@ -80,20 +80,19 @@ body {
    font-size: 18px;
 }
 
-
 .header {
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 98;
 
-    .slogan {
-       color: #6b6b6b;
-        font-weight: 300;
-        width: 220px;
-        font-size: 14px;
-        margin: 0 0 0 15px;
-    }
+   .slogan {
+      color: #6b6b6b;
+      font-size: 14px;
+      font-weight: 300;
+      width: 220px;
+      margin: 0 0 0 15px;
+   }
 
     &-nav {
         padding-bottom: 5px;
@@ -140,43 +139,35 @@ body {
 }
 
 .footer {
-    position: static;
-    font-size: 15px;
+   font-weight: 300;
+   font-size: 15px;
+   padding: 20px 0;
+
    .slogan {
-      font-size: 16px;
+      max-width: 230px;
+   }
+
+   a {
+      font-weight: 500;
    }
 
     &-content {
-      justify-content: space-between;
-        .footer-phone {
-           a {
-            display: block;
-           }
-        }
-    }
-    &-logo {
-       .logo-text {
-          margin: 0;
-       }
-    }
+      display: flex;
+      align-items: center;
+      justify-content: space-between;      
+   }
 
-    &-info {
-      max-width: 230px;
-      
+   &-info {
+      max-width: 230px;      
       text-align: center;
-      .footer-img {
-         display: block;
+      a {
+         text-decoration: none;
       }
-        .footer-address {
-           display: block;
-        }
-        .footer-info-mail {
-           display: block;
-        }
-    }  
-    .text-phone {
-       font-weight: 500;
-    }  
+   }  
+   
+   &-phone {
+      text-align: right;
+   }
 }
 
 .main-menu {    

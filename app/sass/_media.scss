@@ -71,6 +71,19 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
 
+   .footer {
+      &-content {
+         flex-direction: column;
+         & > * {
+            text-align: center;
+            margin-bottom: 20px;
+            &:last-child {
+               margin-bottom: 0;
+            }
+         }
+      }
+   }
+
     .button {
 		min-width: auto;
     }
@@ -106,20 +119,6 @@
 
 	.hidden-xxs {
 		display: none !important;
-    }
-
-    .footer {
-        &-content {
-            display: block;
-        }
-
-        &-info {
-            display: block;
-        }
-
-        &-address {
-            margin: 20px 0 0;
-        }
     }
 
     .section {
