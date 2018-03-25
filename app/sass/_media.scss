@@ -91,6 +91,23 @@
             }
          }
       }
+
+      &-zamira {
+         &-img {
+            width: 300px;
+         }
+         &-text {
+            margin-left: 50px;
+         }
+         &-block {
+            margin-left: 210px;
+         }
+         &-list {
+            img {
+               display: none;
+            }
+         }
+      }
    }
 
 
@@ -171,7 +188,35 @@
             }
          }
       }
-    }
+
+      &-zamira {
+         &-img {
+            display: none;
+         }
+         &-block {
+            max-width: none;
+            padding: 30px 15px;
+            margin-left: 0;
+         }
+         &-text {
+            margin-left: 0;
+            justify-content: center;
+            div {
+               max-width: 260px;
+            }
+         }
+         &-list {
+            padding: 0;
+            li {
+               margin-bottom: 10px;
+            }
+         }
+         .button {
+            display: block;
+            margin: 0 auto;
+         }
+      }
+   }
 
 }
 
@@ -255,7 +300,18 @@
             width: 100%;
          }
       }
-      
+
+      &-zamira {
+         padding: 0;
+         background-color: #f6f7fc;
+         &-text {
+            flex-direction: column;
+            text-align: center;
+            div {
+               max-width: none;
+            }
+         }
+      }
    }
 
 }
