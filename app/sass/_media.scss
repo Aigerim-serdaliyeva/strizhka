@@ -78,6 +78,19 @@
             width: 50%;
          }
       }
+
+      &-form {
+         form {
+            flex-wrap: wrap;
+            justify-content: center;
+         }
+         .input {
+            margin-bottom: 20px;
+            &:first-child {
+               margin-right: 20px;
+            }
+         }
+      }
    }
 
 
@@ -146,6 +159,18 @@
             }
          }
       }
+
+      &-form {
+         form {
+            flex-direction: column;
+            justify-content: center;
+         }
+         .input {
+            &:first-child {
+               margin-right: 0;
+            }
+         }
+      }
     }
 
 }
@@ -177,7 +202,7 @@
          font-size: 24px;
          margin-bottom: 20px;
       }
-      
+
       &-main {
          text-align: center;
          &-text {
@@ -213,6 +238,22 @@
                   margin: 0;
                }
             }
+         }
+      }
+
+      &-form {
+         &-title {
+            font-weight: 500;
+            font-size: 24px;
+         }
+         &-text {
+            font-size: 18px;
+         }
+         form {
+            padding: 15px;
+         }
+         .input, .button {
+            width: 100%;
          }
       }
 
