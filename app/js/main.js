@@ -72,6 +72,10 @@ $(document).ready(function() {
         $html.stop().animate({ scrollTop: 0 }, 'slow', 'swing');
     });
 
+    $(document).on('closing', '.remodal', function (e) {
+      $(".remodal .input").removeClass("error");
+   });
+
     $("input[type=tel]").mask("+7 (999) 999 99 99", {
         completed: function() {
             $(this).removeClass('error');
