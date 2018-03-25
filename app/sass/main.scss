@@ -232,7 +232,6 @@ body {
 
     &-title {
         font-size: 30px;
-        color: #1b1b1b;
         text-align: center;
         margin: 0 0 40px 0;
         font-weight: 600;
@@ -240,23 +239,22 @@ body {
     }
 
     &-main {
-         padding: 140px 0;
-         background-image: url('../img/mainback.jpg');
-         background-size: cover;
-         background-repeat: no-repeat;
-         background-position: center, 0;    
-         position: relative;
+      padding: 185px 0 100px 0;
+      background-image: url('../img/mainback.jpg');
+      background-position: center, 0;    
+      position: relative;
+
          &-subtitle {
             font-size: 24px;
             text-transform: uppercase;
             font-weight: normal;
-            margin: 5px 0;
+            margin: 0 0 5px;
          }
+
          &-title {
             text-transform: uppercase;
             font-size: 40px;
             letter-spacing: 4px;
-            line-height: 1,2;
             font-weight: 600;
             max-width: 450px;
             margin: 0;
@@ -287,20 +285,26 @@ body {
             }
          }
          &-footer {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 25px;
             &-content {
-               position: absolute;
-               bottom: 0;
                display: flex;
-               &-title {
-                  font-size: 16px;
-                  font-weight: normal;
-                  max-width: 170px;
-                  margin: 25px 50px 25px 0;
-                  
+            }
+            &-title {
+               color: #fff;
+               font-size: 16px;
+               font-weight: normal;
+               max-width: 170px;
+               margin: 0 50px 0 0;               
+               &:last-child {
+                  margin: 0;
                }
             }
          }
-      }
+   }
+
    &-why {
       &-items {
          display: flex;
