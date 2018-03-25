@@ -15,6 +15,12 @@
             }
          }
       }
+
+      &-program {
+         .program {
+            padding-right: 70px;
+         }
+      }
    }
 }
 
@@ -106,6 +112,19 @@
             img {
                display: none;
             }
+         }
+      }
+
+      &-program {
+         &-content {
+            flex-wrap: wrap;
+            justify-content: center;
+         }
+         .program {
+            width: auto;
+            max-width: 340px;
+            padding-right: 140px;
+            margin: 0 10px 20px;
          }
       }
    }
@@ -216,6 +235,8 @@
             margin: 0 auto;
          }
       }
+
+      
    }
 
 }
@@ -309,6 +330,18 @@
             text-align: center;
             div {
                max-width: none;
+            }
+         }
+      }
+
+      &-program {
+         .program {
+            width: 100%;
+            max-width: none;
+            padding-right: 40%;
+            margin: 0 0 20px;
+            &:last-child {
+               margin-bottom: 0;
             }
          }
       }

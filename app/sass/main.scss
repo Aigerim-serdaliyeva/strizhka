@@ -432,12 +432,14 @@ body {
          margin-left: 170px;
       }
    }
+
    &-program {
       &-content {
          display: flex;
       }
       .program {
          background-size: cover;
+         // background-position: right center;
          width: 33.33%;
          padding: 31px 160px 25px 22px;
          margin-right: 20px;
