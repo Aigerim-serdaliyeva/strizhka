@@ -21,6 +21,23 @@
 .owl-carousel {
     padding: 0 50px;
 	.owl {
+      &-dots {
+         margin-top: 40px;
+         display: flex;
+         justify-content: center;
+      }
+
+      &-dot {
+         border-radius: 50%;
+         background-color: rgb(210, 211, 215) !important;
+         width: 12px;
+         height: 12px;
+         margin: 0 5px;
+         &.active {
+            background-color: $accent !important;
+         }
+      }
+
 		&-prev, &-next {
 			position: absolute;
 			top: 50%;

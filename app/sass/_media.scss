@@ -450,6 +450,13 @@
             margin: 0;
          }
       }
+
+      &-reviews {
+         .review {
+            padding-left: 15px;
+            padding-right: 15px;
+         }
+      }
    }
 
 }

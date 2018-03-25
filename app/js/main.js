@@ -91,39 +91,7 @@ $(document).ready(function() {
         return false;
     });
 
-    $(".carousel-certificate").owlCarousel({
-        nav: true,
-        dots: false,
-        loop: true,
-        smartSpeed: 500,
-        margin: 30,
-        navText: ['', ''],
-        responsive: {
-            0: { items: 1 },
-            480: { items: 2 },
-            768: { items: 3 },        
-            992: { items: 4, margin: 50 },
-            1200: { items: 4, margin: 100 }        
-        },
-    });
-
-    $(".carousel-certificate").owlCarousel({
-        nav: true,
-        dots: false,
-        loop: true,
-        smartSpeed: 500,
-        margin: 30,
-        navText: ['', ''],
-        responsive: {
-            0: { items: 1 },
-            480: { items: 2 },
-            768: { items: 3 },        
-            992: { items: 4, margin: 50 },
-            1200: { items: 4, margin: 100 }        
-        },
-    });
-
-    $(".carousel-diplom").owlCarousel({
+   $(".carousel-diplom").owlCarousel({
       nav: true,
       dots: true,
       loop: true,
@@ -185,14 +153,13 @@ $(document).ready(function() {
   })
 
   $(".carousel-reviews").owlCarousel({
-   nav: true,
-   items: 1,
-   dots: false,
-   loop: true,
-   smartSpeed: 500,
-   margin: 30,
-   navText: ['', ''],
-   
+      nav: true,
+      items: 1,
+      dots: false,
+      loop: true,
+      smartSpeed: 500,
+      margin: 30,
+      navText: ['', '']   
    });
 
     $(".ajax-submit").click(function(e) {

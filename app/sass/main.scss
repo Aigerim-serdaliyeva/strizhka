@@ -238,7 +238,7 @@ body {
         text-transform: uppercase;
     }
 
-    &-main {
+   &-main {
       padding: 185px 0 100px 0;
       background-image: url('../img/mainback.jpg');
       background-position: center, 0;    
@@ -461,6 +461,7 @@ body {
          }
       }
    }
+
    &-training {
       &-content {
          display: flex;
@@ -500,6 +501,7 @@ body {
          }
       }
    }
+
    &-learn {
       padding-top: 0;
       &-content {
@@ -520,6 +522,7 @@ body {
          font-size: 15px;
       }
    }
+
    &-work {
       &-content {
          display: flex;
@@ -543,6 +546,7 @@ body {
          }
       }
    }
+
    &-video {
       text-align: center;
       .section-title {
@@ -558,6 +562,7 @@ body {
          margin-bottom: 20px;
       }
    }
+
    &-partners {
       &-content {
          display: flex;
@@ -568,6 +573,7 @@ body {
          max-width: 830px;
       }
    }
+
    &-diplom {
       .carousel-diplom {
          max-width: 940px;
@@ -578,14 +584,32 @@ body {
          display: block;
       }
    }
+
    &-reviews {
-     
-      
-      .review {
+      .carousel-reviews {
          max-width: 810px;
-         text-align: center;
-         margin: 0 auto;
          background-color: #f6f7fc;
+         margin: 0 auto;
+         padding: 0;
+
+         .owl {
+            &-nav {
+               position: absolute;
+               top: 10px;
+               right: 10px;
+            }
+
+            &-prev, &-next {
+               position: static;
+               transform: none;
+               margin: 0 10px;
+            }
+         }
+
+      }
+         
+      .review {
+         text-align: center;
          padding: 35px 70px;
          img {
             width: auto;
@@ -601,10 +625,6 @@ body {
          }
    
       }
-      // .section-review {
-      //    max-width: 810px;
-      //    margin: 0 auto;
-      // }
    }
 }
 
