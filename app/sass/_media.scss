@@ -6,7 +6,16 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px) {
-
+   .section {
+      &-why {
+         &-me {
+            width: 33.3%;
+            &-block {
+               max-width: none;
+            }
+         }
+      }
+   }
 }
 
 @media only screen and (max-width : 991px) {	
@@ -63,9 +72,16 @@
 		}
     }
 
-    .section {
+   .section {
+      &-why {
+         &-me {
+            width: 50%;
+         }
+      }
+   }
 
-    }
+
+
 }
 
 /* Small Devices, Tablets */
@@ -116,6 +132,20 @@
             }
          }
       }
+
+      &-why {
+         &-me {
+            margin-bottom: 0;
+            &-photo {
+               width: 80px;
+            }
+            &-block {
+               &-title {
+                  margin: 10px 0;
+               }
+            }
+         }
+      }
     }
 
 }
@@ -143,6 +173,11 @@
    }
 
    .section {
+      &-title {
+         font-size: 24px;
+         margin-bottom: 20px;
+      }
+      
       &-main {
          text-align: center;
          &-text {
@@ -161,6 +196,26 @@
             }
          }
       }
+
+      &-why {
+         &-number {
+            display: inline-block;
+         }
+         &-me {
+            width: 100%;
+            margin-bottom: 10px;
+            &-photo {
+               display: none;
+               // width: 80px;
+            }
+            &-block {
+               &-title {
+                  margin: 0;
+               }
+            }
+         }
+      }
+
         &-question {
             .form {
                 .input-div {

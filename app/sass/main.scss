@@ -309,12 +309,19 @@ body {
       &-items {
          display: flex;
          flex-wrap: wrap;
+         justify-content: space-between;
+      }
+      &-number {
+         display: none;
       }
       &-me {
-         width: 33.33%;
          display: flex;
-         justify-content: space-between;
          margin-bottom: 30px;
+         &-photo {
+            flex-shrink: 0;
+            width: 120px;
+            text-align: right;
+         }
          &-block {
             max-width: 225px;
             margin-left: -10px;
