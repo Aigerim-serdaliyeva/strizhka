@@ -24,6 +24,12 @@ $(document).ready(function() {
             $top.removeClass('active');
         }
 
+      if($wnd.scrollTop() > 0) {
+            $header.addClass('scrolled');
+      } else {
+            $header.removeClass('scrolled');
+      }
+
         var scrollPos = $wnd.scrollTop() + headerHeight;
 
         $menu.find(".link").each(function() {
