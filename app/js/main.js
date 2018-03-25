@@ -135,9 +135,54 @@ $(document).ready(function() {
           480: { items: 2 },
           768: { items: 3 },        
           992: { items: 4},
-         //  1200: { items: 4, margin: 100 }        
       },
    });
+
+   $(".carousel").on('init', function(event, slick){
+      slick.$slider.find(".slick-center").prev().addClass("slick-center-prev");
+   });
+
+   $(".carousel").on('beforeChange', function(event, slick, currentSlide, nextSlide){
+      slick.$slider.find(".slick-slide").removeClass("slick-center-prev");
+      slick.$slider.find(".slick-center").addClass("slick-center-prev");
+   });
+
+   $(".carousel").slick({
+      prevArrow: '<button type="button" class="slick-prev"></button>',
+      nextArrow: '<button type="button" class="slick-next"></button>',
+      infinite: true,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      centerMode: true,
+      centerPadding: '0px',
+      pauseOnHover: true,        
+      responsive: [
+         {
+            breakpoint: 1200,
+            settings: {
+            slidesToShow: 5,
+            }      
+         },
+         {
+            breakpoint: 991,
+            settings: {
+            slidesToShow: 3,
+            }      
+         },
+         {
+            breakpoint: 768,
+            settings: {
+            slidesToShow: 2,
+            }      
+         }, 
+         {      
+            breakpoint: 479,
+            settings: {
+            slidesToShow: 1,
+            }      
+        }
+      ]
+  })
 
   $(".carousel-reviews").owlCarousel({
    nav: true,
