@@ -21,6 +21,15 @@
             padding-right: 70px;
          }
       }
+
+      &-work {
+         &-content {
+            justify-content: center;
+         }
+         .work-block {
+            margin: 0 20px;
+         }
+      }
    }
 }
 
@@ -400,7 +409,12 @@
       &-learn {
          &-block {
             width: 100%;
-            // margin-bottom: 15px;
+         }
+      }
+
+      &-work {
+         .work-block {
+            margin: 0;
          }
       }
    }
