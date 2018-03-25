@@ -98,22 +98,20 @@ p {
 
     &-div {
         position: relative;
-        width: 160px;
-        border-bottom: 1px solid #0ea9e3;            
+      //   width: 160px;
+      //   border-bottom: 1px solid #0ea9e3;            
 
         & .input {
-          width: 100%;  
+         //  width: 100%;  
         }
 
         & .error-message {
             position: absolute;
-            top: calc(100% + 5px);
+            top: calc(100% + 1px);
+            margin-top: 0 !important;
             left: 0;
         }
 
-        .inverse & {
-            border-bottom-color: #fff;
-        }
     }
 
     &.error {
@@ -128,6 +126,8 @@ p {
 	&+.error-message {
 		display: none;
 		color: red;
+      text-align: left;
+      margin: -15px 0 0 15px;
 	}
 
 	&::-webkit-input-placeholder {

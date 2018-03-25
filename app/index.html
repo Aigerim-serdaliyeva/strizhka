@@ -233,9 +233,12 @@
                и станьте высококлассным парикмахером-стилистом
             </div>
             <form>
+               <input type="hidden" name="info" value="Пройдите обучение в EDC Hair">
                <input class="input" type="text" name="Имя" placeholder="Введите имя">
-               <input class="input phone" type="tel" name="Телефон9" placeholder="Введите телефон">
-               <span class="error-message">Заполните это поле</span>
+               <div class="input-div">
+                  <input class="input" type="tel" name="Телефон" placeholder="Введите телефон" required>
+                  <span class="error-message">Заполните это поле</span>      
+               </div>
                <input type="button" class="button ajax-submit" value="Оставить заявку">
             </form>
          </div>
@@ -320,9 +323,12 @@
                по окрашиванию и стрижкам
             </div>
             <form>
+               <input type="hidden" name="info" value="запишитесь на базовый курс по окрашиванию и стрижкам">
                <input class="input" type="text" name="Имя" placeholder="Введите имя">
-               <input class="input phone" type="tel" name="Телефон" placeholder="Введите телефон">
-               <span class="error-message">Заполните это поле</span>
+               <div class="input-div">
+                  <input class="input" type="tel" name="Телефон" placeholder="Введите телефон" required>
+                  <span class="error-message">Заполните это поле</span>      
+               </div>
                <input type="button" class="button ajax-submit" value="записаться">
             </form>
          </div>
@@ -396,9 +402,12 @@
                по окрашиванию волос
             </div>
             <form>
+               <input type="hidden" name="info" value="запишитесь на базовый курс по окрашиванию волос">
                <input class="input" type="text" name="Имя" placeholder="Введите имя">
-               <input class="input phone" type="tel" name="Телефон" placeholder="Введите телефон">
-               <span class="error-message">Заполните это поле</span>
+               <div class="input-div">
+                  <input class="input" type="tel" name="Телефон" placeholder="Введите телефон" required>
+                  <span class="error-message">Заполните это поле</span>      
+               </div>
                <input type="button" class="button ajax-submit" value="записаться">
             </form>
          </div>
@@ -486,9 +495,12 @@
                у опытного стилиста международного класса Замиры де Клерк
             </div>
             <form>
+               <input type="hidden" name="info" value="Пройдите обучение у опытного стилиста международного класса Замиры де Клерк">
                <input class="input" type="text" name="Имя" placeholder="Введите имя">
-               <input class="input phone" type="tel" name="Телефон" placeholder="Введите телефон">
-               <span class="error-message">Заполните это поле</span>
+               <div class="input-div">
+                  <input class="input" type="tel" name="Телефон" placeholder="Введите телефон" required>
+                  <span class="error-message">Заполните это поле</span>      
+               </div>
                <input type="button" class="button ajax-submit" value="пройти обучение">
             </form>
          </div>
@@ -588,9 +600,12 @@
                   Хотите записаться? Оформите заявку!
             </div>
             <form>
+               <input type="hidden" name="info" value="Открыт новый набор в группу">
                <input class="input" type="text" name="Имя" placeholder="Введите имя">
-               <input class="input phone" type="tel" name="Телефон" placeholder="Введите телефон">
-               <span class="error-message">Заполните это поле</span>
+               <div class="input-div">
+                  <input class="input" type="tel" name="Телефон" placeholder="Введите телефон" required>
+                  <span class="error-message">Заполните это поле</span>      
+               </div>
                <input type="button" class="button ajax-submit" value="оформить заявку">
             </form>
          </div>
@@ -635,9 +650,12 @@
                   Отправьте нам заявку
             </div>
             <form>
+               <input type="hidden" name="info" value="Хотите стать нашей моделью для стрижек и окрашиваний?">
                <input class="input" type="text" name="Имя" placeholder="Введите имя">
-               <input class="input phone" type="tel" name="Телефон" placeholder="Введите телефон">
-               <span class="error-message">Заполните это поле</span>
+               <div class="input-div">
+                  <input class="input" type="tel" name="Телефон" placeholder="Введите телефон" required>
+                  <span class="error-message">Заполните это поле</span>      
+               </div>
                <input type="button" class="button ajax-submit" value="отправить заявку">
             </form>
          </div>
@@ -679,9 +697,12 @@
                   Отправьте заявку и наш консультант свяжется с вами
             </div>
             <form>
+               <input type="hidden" name="info" value="Получите подробную консультацию о курсе">
                <input class="input" type="text" name="Имя" placeholder="Введите имя">
-               <input class="input phone" type="tel" name="Телефон" placeholder="Введите телефон">
-               <span class="error-message">Заполните это поле</span>
+               <div class="input-div">
+                  <input class="input" type="tel" name="Телефон" placeholder="Введите телефон" required>
+                  <span class="error-message">Заполните это поле</span>      
+               </div>
                <input type="button" class="button ajax-submit" value="отправить заявку">
             </form>
          </div>
@@ -743,7 +764,8 @@
 	<div class="remodal remodal-small" data-remodal-id="thanks-modal" data-remodal-options="hashTracking: false">
 		<button data-remodal-action="close" class="remodal-close"></button>
 
-		<h4 class="modal-title">Спасибо за заявку. Мы с вами свяжимся.</h4>
+      <div class="modal-title">Спасибо за заявку. Мы с вами свяжимся.</div>
+      <div>Ваше сообщение успешно отправлено, наши менеджеры свяжутся с вами в ближайшее время</div>
 	</div>
 
 	<div class="remodal remodal-small" data-remodal-id="zvonok-modal" data-remodal-options="hashTracking: false">

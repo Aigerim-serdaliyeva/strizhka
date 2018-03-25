@@ -7,7 +7,7 @@ $(document).ready(function() {
     var $menu = $(".main-menu");
     var utms = parseGET();
     var headerHeight = 112;
-    var thanks = $("#thanks-modal").remodal();
+    var thanks = $('[data-remodal-id="thanks-modal"]').remodal();
     var $hamburger = $(".hamburger");
 
     if(utms && Object.keys(utms).length > 0) {

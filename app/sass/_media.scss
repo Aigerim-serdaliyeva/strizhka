@@ -102,7 +102,7 @@
             }            
 			}
 		}
-    }
+   }
 
    .section {
       &-why {
@@ -115,10 +115,12 @@
          form {
             flex-wrap: wrap;
             justify-content: center;
-         }
-         .input {
-            margin-bottom: 20px;
-            &:first-child {
+
+            & > .input, & > .input-div {
+               margin-bottom: 30px;               
+            }
+
+            & > .input {
                margin-right: 20px;
             }
          }
@@ -260,12 +262,11 @@
          form {
             flex-direction: column;
             justify-content: center;
-         }
-         .input {
-            &:first-child {
+
+            & > .input {
                margin-right: 0;
-            }
-         }
+            } 
+         }         
       }
 
       &-zamira {
@@ -394,7 +395,7 @@
          form {
             padding: 15px;
          }
-         .input, .button {
+         .input, .button, .input-div {
             width: 100%;
          }
       }
